@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "modid",
+  "version": "${version}",
+  "name": "modid",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "HO Artisan"
+  ],
+  "contact": {
+    "homepage": "https://github.com/HO-Artisan"
+  },
+  "license": "CC0",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ho.artisan.modid.Modid"
+    ]
+  },
+  "mixins": [
+    "modid.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "minecraft": "1.20.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "some-fabricmod": "*"
+  }
+}
