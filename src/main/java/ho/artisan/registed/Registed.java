@@ -1,6 +1,6 @@
 package ho.artisan.registed;
 
-import ho.artisan.registed.annotation.RegistryId;
+import ho.artisan.registed.annotation.RegistryID;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 
@@ -22,8 +22,8 @@ public class Registed implements ModInitializer {
 		FabricLoader.getInstance().getEntrypoints(ID, Object.class).forEach(object -> {
 			Class<?> clazz = object.getClass();
 
-			if (clazz.isAnnotationPresent(RegistryId.class)) {
-				String registryId = clazz.getAnnotation(RegistryId.class).value();
+			if (clazz.isAnnotationPresent(RegistryID.class)) {
+				String registryId = clazz.getAnnotation(RegistryID.class).value();
 				if (registryId.isEmpty()) {
 					LOGGER.error("Entrypoint class '" + object.getClass().getName() + "' has an empty registry id!");
 					return;
@@ -33,7 +33,7 @@ public class Registed implements ModInitializer {
 				Arrays.stream(clazz.getDeclaredFields()).forEach(registryHandler::register);
 
 			} else {
-				LOGGER.error("Entrypoint class '" + object.getClass().getName() + "' is not annotated by '" + RegistryId.class.getName() + "'!");
+				LOGGER.error("Entrypoint class '" + object.getClass().getName() + "' is not annotated by '" + RegistryID.class.getName() + "'!");
 			}
 		});
 	}

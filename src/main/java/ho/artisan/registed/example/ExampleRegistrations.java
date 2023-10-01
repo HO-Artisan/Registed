@@ -1,6 +1,6 @@
 package ho.artisan.registed.example;
 
-import ho.artisan.registed.annotation.RegistryId;
+import ho.artisan.registed.annotation.RegistryID;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.GrassBlock;
@@ -11,7 +11,7 @@ import net.minecraft.item.Item;
  * In this case, this class is not referenced in the mod's <code>fabric.mod.json</code> as this is just an example.
  * But in production, remember to reference your registration classes as entrypoints.
  */
-@RegistryId("registed")
+@RegistryID("registed")
 public class ExampleRegistrations {
     @ho.artisan.registed.annotation.registries.Item
     public static final Item ITEM = new Item(new Item.Settings());

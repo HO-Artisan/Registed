@@ -1,22 +1,17 @@
 package ho.artisan.registed;
 
-import ho.artisan.registed.annotation.RegistryId;
-import ho.artisan.registed.annotation.registries.*;
+import ho.artisan.registed.annotation.RegistryID;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.Nullable;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.stream.Collectors;
 
 public record RegistryHandler(String namespace, Object classObject) {
     private static boolean isValidAnnotation(Annotation rawAnnotation) {
-        return rawAnnotation.annotationType().getPackageName().equals(RegistryId.class.getPackageName() + ".registries");
+        return rawAnnotation.annotationType().getPackageName().equals(RegistryID.class.getPackageName() + ".registries");
     }
 
     private static boolean isValidField(Field field) {
@@ -62,8 +57,8 @@ public record RegistryHandler(String namespace, Object classObject) {
                 .orElseThrow();
 
         // Get identifier
-        String path = field.isAnnotationPresent(RegistryId.class)
-                ? field.getAnnotation(RegistryId.class).value()
+        String path = field.isAnnotationPresent(RegistryID.class)
+                ? field.getAnnotation(RegistryID.class).value()
                 : field.getName().toLowerCase();
 
         Identifier id = new Identifier(namespace(), path);
