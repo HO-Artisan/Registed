@@ -5,7 +5,10 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
+/**
+ * @see net.minecraft.registry.Registries#FOLIAGE_PLACER_TYPE
+ */
+@Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface FoliagePlacerType {
 }

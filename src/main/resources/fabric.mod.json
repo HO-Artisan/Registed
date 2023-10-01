@@ -20,7 +20,6 @@
     ]
   },
   "mixins": [
-    "registed.mixins.json"
   ],
   "depends": {
     "fabricloader": "*",
