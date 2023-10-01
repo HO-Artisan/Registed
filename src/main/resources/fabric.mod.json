@@ -3,7 +3,7 @@
   "id": "registed",
   "version": "${version}",
   "name": "Registed",
-  "description": "Brings You Annotated Registries!",
+  "description": "A Library that Brings You Annotated Registries!",
   "authors": [
     "HO Artisan"
   ],
@@ -13,7 +13,7 @@
   },
   "license": "GPL-3.0",
   "icon": "assets/registed/icon.png",
-  "environment": "*",
+  "environment": "server",
   "entrypoints": {
     "main": [
       "ho.artisan.registed.Registed"
@@ -28,5 +28,11 @@
     "java": ">=17"
   },
   "suggests": {
+  },
+
+  "custom": {
+    "modmenu": {
+      "badges": [ "library" ]
+    }
   }
 }
