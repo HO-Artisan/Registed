@@ -1,13 +1,7 @@
-<div align="center">
+### <p align=right>[`→` Modrinth](https://modrinth.com/mod/registed)</p>
 
-<img height="200" width="200" src="./src/main/resources/assets/modid/icon.png" alt="Example mod Icon"/>
-
-# HO Fabric Template Mod
-
-This is an example mod!
-
-</div>
+# Registed
 
 ## License
 
-This example is available under [the CC0 license](LICENSE).
+**Registed** is licensed under the **[GNU General Public License v3.](LICENSE)**
