@@ -140,6 +140,9 @@ public static final Item ITEM = ...;
 > [!NOTE]
 > The identifier path provided by [`@RegistryID ↗@@rightup`](src/main/java/ho/artisan/registed/annotation/RegistryID.java)[@^RegistryID_classpath] will be consumed as raw without any further processing.
 
+> [!NOTE]
+> Examples can be found at [`ExampleRegistrations ↗`](src/main/java/ho/artisan/registed/example/ExampleRegistrations.java).
+
 ## License
 
 **Registed** is licensed under the **[GNU General Public License v3.](LICENSE)**
