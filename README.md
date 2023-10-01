@@ -4,8 +4,6 @@
 
 ## Gradle
 
-## Gradle
-
 <details>
 
 <summary>Groovy</summary>
