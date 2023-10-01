@@ -94,7 +94,7 @@ public class ClassName {
 }
 ```
 
-You must annotate your registration class with `@RegistryID`[^@RegistryID_classpath] to tell **Registed** which namespace to use.
+You must annotate your registration class with [`@RegistryID ↗`](src/main/java/ho/artisan/registed/annotation/RegistryID.java)[^@RegistryID_classpath] to tell **Registed** which namespace to use.
 
 [^@RegistryID_Classpath]: `ho.artisan.registed.annotation.RegistryID`
 
@@ -116,8 +116,9 @@ After that, remember to reference this class in your `fabric.mod.json`:
 }
 ```
 
-**Registed** supports all `Registry<?>` types inside class `Registries`[^Registries_classpath]. You should convert the target registry type name from **UPPER_SNAKE_CASE** to **CamelCase** to find the desired annotation, for example, `Registries.LOOT_NBT_PROVIDER_TYPE` has a representing annotation named `LootNBTProviderType`.
+**Registed** supports all `Registry<?>`[^Registry_classpath] types inside class `Registries`[^Registries_classpath]. You should convert the target registry type name from **UPPER_SNAKE_CASE** to **CamelCase** to find the desired annotation, for example, `Registries.LOOT_NBT_PROVIDER_TYPE` has a representing annotation named [`@LootNBTProviderType`](src/main/java/ho/artisan/registed/annotation/registries/LootNBTProviderType.java).
 
+[^Registry_classpath]: `net.minecraft.registry.Registry`
 [^Registries_classpath]: `net.minecraft.registry.Registries`
 
 > [!NOTE]
@@ -128,7 +129,7 @@ After that, remember to reference this class in your `fabric.mod.json`:
 
 By default, the registered objects will use their field names in **snake_case** as their in-game identifier paths, for example, field `MY_EXAMPLE_ITEM` will have the identifier path of `my_example_item`. We suggest using **UPPER_SNAKE_CASE** to name your fields, as they should be `static` and `final` and only in snake cases will **Registed** preserve the underscores.
 
-To customize a registered object's in-game identifier path, you can apply annotation `@RegistryID`[^@RegistryID_classpath] to the target field:
+To customize a registered object's in-game identifier path, you can apply annotation [`@RegistryID ↗`](src/main/java/ho/artisan/registed/annotation/RegistryID.java)[^@RegistryID_classpath] to the target field:
 
 ```java
 @RegistryID("my_item")
@@ -137,7 +138,7 @@ public static final Item ITEM = ...;
 ```
 
 > [!NOTE]
-> The identifier path provided by `@RegistryID`[@^RegistryID_classpath] will be consumed as raw without any further processing.
+> The identifier path provided by [`@RegistryID ↗@@rightup`](src/main/java/ho/artisan/registed/annotation/RegistryID.java)[@^RegistryID_classpath] will be consumed as raw without any further processing.
 
 ## License
 
