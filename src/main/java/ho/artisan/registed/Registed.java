@@ -1,6 +1,7 @@
 package ho.artisan.registed;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
 
 import org.slf4j.Logger;
