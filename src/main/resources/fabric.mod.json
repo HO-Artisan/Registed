@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "registed",
   "version": "${version}",
-  "name": "modid",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Registed",
+  "description": "",
   "authors": [
     "HO Artisan"
   ],
   "contact": {
-    "homepage": "https://github.com/HO-Artisan"
+    "homepage": "https://github.com/HO-Artisan",
+    "sources": "https://github.com/HO-Artisan/Registed"
   },
-  "license": "CC0",
-  "icon": "assets/modid/icon.png",
+  "license": "GPL-3.0",
+  "icon": "assets/registed/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "ho.artisan.modid.Modid"
+      "ho.artisan.registed.Registed"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "registed.mixins.json"
   ],
   "depends": {
     "fabricloader": "*",
     "fabric": "*",
-    "minecraft": "1.20.1",
+    "minecraft": "1.20.x",
     "java": ">=17"
   },
   "suggests": {
-    "some-fabricmod": "*"
   }
 }
