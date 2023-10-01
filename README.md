@@ -60,7 +60,7 @@ registedVersion=?
 
 </details>
 
-Next, reference **Registed** in your `fabric.mod.json` as a dependency:
+Next, reference **Registed** into your `fabric.mod.json` as a dependency:
 
 <h6 align="right">fabric.mod.json</h6>
 
