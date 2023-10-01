@@ -116,7 +116,7 @@ After that, remember to reference this class in your `fabric.mod.json`:
 }
 ```
 
-**Registed** supports all `Registry<?>`[^Registry_classpath] types inside class `Registries`[^Registries_classpath]. You should convert the target registry type name from **UPPER_SNAKE_CASE** to **CamelCase** to find the desired annotation, for example, `Registries.LOOT_NBT_PROVIDER_TYPE` has a representing annotation named [`@LootNBTProviderType`](src/main/java/ho/artisan/registed/annotation/registries/LootNBTProviderType.java).
+**Registed** supports all `Registry<?>`[^Registry_classpath] types inside class `Registries`[^Registries_classpath]. You should convert the target registry type name from **UPPER_SNAKE_CASE** to **CamelCase** to find the desired annotation, for example, `Registries.LOOT_NBT_PROVIDER_TYPE` has a representing annotation [`@LootNBTProviderType`](src/main/java/ho/artisan/registed/annotation/registries/LootNBTProviderType.java).
 
 [^Registry_classpath]: `net.minecraft.registry.Registry`
 [^Registries_classpath]: `net.minecraft.registry.Registries`
